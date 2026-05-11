@@ -2,7 +2,7 @@
 #include <math.h>
 
 
-#define makslen 1000
+#define makslen 10000
 #define maks 100000
 #define dt 0.001
 #define dim 2
