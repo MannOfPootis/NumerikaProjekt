@@ -1,15 +1,17 @@
 #include <iostream>
 #include <math.h>
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-#define maks 1000
-#define dt 0.01
+
+#define makslen 1000
+#define maks 100000
+#define dt 0.001
 #define dim 2
 #define g 9.81
 #define r 1.0
 #define m 1.0
-#define Emin -r*g*m*0.8
+#define Emin -r*g*m*0.9
 #define ke 0.9
+#define drawSparse ((int)ceil(maks/makslen))
 using namespace std;
 double energy(double pos[], double vel[])
 {
@@ -77,7 +79,7 @@ int iter=0;
         for (int i = 0; i < dim; i++)
         {
             pos[i] += vel[i]*dt;
-            fprintf(pisi,"%lf \t ",pos[i]);
+  //          fprintf(pisi,"%lf \t ",pos[i]);
 
 
         }
@@ -94,16 +96,29 @@ int iter=0;
             double scale=dot(pos,vel)/distsq(pos);
             double mideruslt[dim];
             //treba je 2x odšteti za popolni odboj
-            times(-(1+sqrt(ke))*scale,pos,mideruslt);//verjetno izgubi samo radialno hitrost
+            times(-(2)*scale,pos,mideruslt);//verjetno izgubi samo radialno hitrost
             add(vel,mideruslt);
-            //  times(0.9,vel,vel);//pomnožimo s tem da pomanjšamo energijo
+              times(sqrt(ke),vel,vel);//pomnožimo s tem da pomanjšamo energijo
             //std::cout<<"bounce "<<std::endl;
             // vel[0]=0;
 
         }
-        fprintf(pisi,"%lf \t ",energy(pos,vel));
 
-        fprintf(pisi,"\n ");
+
+        if (iter%drawSparse==0||distsq(pos)>=r*r)
+        {
+              for (int i = 0; i < dim; i++)
+              {
+              //    pos[i] += vel[i]*dt;
+                  fprintf(pisi,"%lf \t ",pos[i]);
+
+
+              }
+            fprintf(pisi,"%lf \t ",energy(pos,vel));
+
+            fprintf(pisi,"\n ");
+        }
+
 
         iter++;
 
