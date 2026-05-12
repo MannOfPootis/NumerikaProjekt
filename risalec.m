@@ -3,7 +3,7 @@
  plot(drawer(:,2),-drawer(:,1));
  title("trajektorija delca")
  drawnow
- saveas(gcf,"/home/doominik/securityCopy/FAX/NumerikaProjekt/dt0.00001traj.jpg")
+ %saveas(gcf,"/home/doominik/securityCopy/FAX/NumerikaProjekt/sutraj.jpg")
  figure(2)
 
  %{
@@ -16,6 +16,6 @@ title("razdalja od sredine")
  plot(drawer(:,3))
    title("skupna mehanska energija")
    drawnow
- saveas(gcf,"/home/doominik/securityCopy/FAX/NumerikaProjekt/dt0.00001E.jpg")
+ %saveas(gcf,"/home/doominik/securityCopy/FAX/NumerikaProjekt/susE.jpg")
 
 
