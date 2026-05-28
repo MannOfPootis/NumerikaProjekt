@@ -101,6 +101,7 @@ void pipe()
             times(sqrt(ke),vel,vel);//pomnožimo s tem da pomanjšamo energijo
             //std::cout<<"bounce "<<std::endl;
             // vel[0]=0;
+            //hmm
 
         }
 
