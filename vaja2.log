@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.16)  12 MAY 2026 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.16)  28 MAY 2026 10:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -204,12 +204,12 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 <errorE.jpg, id=16, 875.27pt x 656.4525pt>
 File: errorE.jpg Graphic file (type jpg)
 <use errorE.jpg>
-Package pdftex.def Info: errorE.jpg  used on input line 52.
+Package pdftex.def Info: errorE.jpg  used on input line 51.
 (pdftex.def)             Requested size: 276.00105pt x 207.004pt.
 <errorEcring2.jpg, id=17, 876.27374pt x 657.45625pt>
 File: errorEcring2.jpg Graphic file (type jpg)
 <use errorEcring2.jpg>
-Package pdftex.def Info: errorEcring2.jpg  used on input line 63.
+Package pdftex.def Info: errorEcring2.jpg  used on input line 62.
 (pdftex.def)             Requested size: 276.00105pt x 207.07974pt.
 
 
@@ -218,10 +218,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <errorEcring.jpg, id=18, 876.27374pt x 657.45625pt>
 File: errorEcring.jpg Graphic file (type jpg)
 <use errorEcring.jpg>
-Package pdftex.def Info: errorEcring.jpg  used on input line 71.
+Package pdftex.def Info: errorEcring.jpg  used on input line 70.
 (pdftex.def)             Requested size: 276.00105pt x 207.07974pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+! Undefined control sequence.
+l.78 ...hko tudi pošljem povezavo na github \href
+                                                  {a}{a}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 [2 <./errorE.jpg>] [3 <./errorEcring2.jpg> <./errorEcring.jpg>] (vaja2.aux)
  ***********
@@ -250,7 +259,7 @@ mr12.pfb></home/doominik/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/
 cmr17.pfb></home/doominik/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm
 /cmr7.pfb></home/doominik/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb>
-Output written on vaja2.pdf (4 pages, 180610 bytes).
+Output written on vaja2.pdf (4 pages, 180630 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

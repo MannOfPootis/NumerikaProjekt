@@ -1,6 +1,6 @@
 #include <iostream>
 #include <math.h>
-
+#include <vector>
 
 int makslen= 10000;
 double maks= 1000;
@@ -453,9 +453,10 @@ void timetrapBAD(int factor, int depth)
 
 int main()
 {
+
     //pipe();
     //pipeBAD();
-    timetrap(10,3);
+   // timetrap(10,3);
    // timetrapBAD(10,3);
 
 
